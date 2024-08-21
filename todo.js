@@ -1,6 +1,11 @@
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
+    var span1 = document.createElement("SPAN1");
+  var txt1 = document.createTextNode("\edit");
+  span1.className = "edit";
+  span1.appendChild(txt1);
+  li.appendChild(span1);
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
@@ -40,13 +45,31 @@ function newElement() {
   }
   document.getElementById("myInput").value = "";
 
+  var span1 = document.createElement("SPAN1");
+  var txt1 = document.createTextNode("\edit");
+  span1.className = "edit";
+  span1.appendChild(txt1);
+  li.appendChild(span1);
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
+  
 
   for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+        let text = "Are u sure u want to delete?";
+        if (confirm(text) == true) {
+            var div = this.parentElement;
+            div.style.display = "none";
+        } else {
+        }
+      
+    }
+  }
+
+  for (i = 0; i < edit.length; i++) {
     close[i].onclick = function() {
         let text = "Are u sure u want to delete?";
         if (confirm(text) == true) {

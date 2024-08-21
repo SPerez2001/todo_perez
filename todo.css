@@ -30,7 +30,7 @@ input {
 
 .close {
   position: absolute;
-  right: 15px;
+  right: 5px;
   top: 0;
   padding: 3px 10px 3px 10px;
   background-color: #f1e6e5;
@@ -42,6 +42,21 @@ input {
     background-color: #f14438;
     color: white;
   }
+
+  .edit {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    padding: 3px 10px 3px 10px;
+    background-color: #f1e6e5;
+      color: black;
+      border-radius: 10px;
+  }
+  
+  .edit:hover {
+      background-color: #f14438;
+      color: white;
+    }
 
 #myUL {
     list-style-type: none;
