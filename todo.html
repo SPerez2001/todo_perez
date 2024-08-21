@@ -24,16 +24,26 @@
         <header>
             <!-- place navbar here -->
         </header>
-        <main>
-            <div id="myDIV" class="header">
-                <h2>My To Do List</h2>
-                <input type="text" id="myInput" placeholder="Title...">
-                <span onclick="newElement()" class="addBtn">Add</span>
-              </div>
-              
-              <ul id="myUL">
-                
-              </ul>
+        <main style="height: 1000px; width: 1000px;margin:auto; display: flex;">
+            <div id = "form">
+                <div id="myDIV" class="header">
+                    <h2>My To Do List</h2>
+                    <div style="display: flex;justify-content: center; margin-bottom: 1rem;">
+                        <input type="text" id="myInput" placeholder="Title...">
+                        <div id = "adbtn">
+                            <span  style = "margin: auto;" onclick="newElement()" class="addBtn">Add</span>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                  </div>
+                  
+                  <ul id="myUL">
+                    
+                  </ul>
+            </div>
+            
         </main>
         
         <script

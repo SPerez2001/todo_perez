@@ -28,6 +28,7 @@ list.addEventListener('click', function(ev) {
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
+    
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
@@ -47,8 +48,13 @@ function newElement() {
 
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
+        let text = "Are u sure u want to delete?";
+        if (confirm(text) == true) {
+            var div = this.parentElement;
+            div.style.display = "none";
+        } else {
+        }
+      
     }
   }
 }

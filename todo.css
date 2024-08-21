@@ -1,0 +1,64 @@
+#form {
+    background-color: rgb(176, 176, 241);
+    padding: 2rem 2rem;
+    height: 400px;
+    width: 350px;
+    align-content: center;
+    text-align: center;
+    margin-top: 10rem;
+    margin: auto;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #a09b9b;
+}
+
+#adbtn {
+    height: 40px;
+    width: 50px;
+    margin: 5px 5px;
+    background-color: #0e4b91;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  padding: 3px 10px 3px 10px;
+  background-color: #f1e6e5;
+    color: black;
+    border-radius: 10px;
+}
+
+.close:hover {
+    background-color: #f14438;
+    color: white;
+  }
+
+#myUL {
+    list-style-type: none;
+    font-size: 20px;
+    
+}
+
+ul {
+  padding: 0;
+  
+}
+
+li {
+  position: relative;
+  padding: 0 15px;
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 4px;
+  border-bottom: 1px solid rgb(134, 133, 133);
+}
